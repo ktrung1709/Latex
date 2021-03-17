@@ -1,0 +1,179 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{multirow}
+\title{Computer Literacy (IT2120) \\ Class ID: 12143, Date: \today}
+\author{Nguyen Khanh Trung - 20205133}
+\date{\today}
+\begin{document}
+	\maketitle
+
+	\section{How to calculate the score of the test}
+		\begin{itemize}
+			\item Compiled to pdf file (0.5 points)
+			\item Title (0.75 points): each line 0.25 points. It is necessary to have your
+correct full name and your correct student number.
+			\item Format the text correctly (0.25 points)
+			\item Sectioning (1.5 points)
+			\item Math (2 points): each equation 0.5 points
+			\item Table ( 1.5 point): first table 0.5 points, second table 1 point.
+			\item Figure (1 point): first figure 0.5 points, second figure 0.5 points.
+			\item Create itemize and enumerate (1 point)
+			\item Cross Ref (0.5 points)
+			\item Create table of content 0.5 points
+			\item Create list of tables 0.25 points
+			\item Create list of figures 0.25 points
+		\end{itemize}
+		
+	\section{Introductions}
+		\subsection{How to do}
+			Students need to create this document using latex and follow \textbf{these below rules:}
+			\begin{enumerate}
+				\item Need to use ``article'' for document class.
+				\item Write your full name and date using commands \textbf{\textbackslash{author}} and \textbf{\textbackslash{date}}.
+				\item Use sectioning commands to split the sections inside the document.
+				\item Use cross-referencing commands \textbf{\textbackslash{ref}}.
+				\item Use commands to create table of contents, list of figures, list of tables.
+				\item Put the image file and Latex source file (.tex) in the same folder.
+				\item Change text \textit{``your\_student\_number''} to correct student number. Example: 20192019
+			\end{enumerate}
+			
+		\subsection{Submission}
+			Time: 90 minutes.\\
+			When submission, student need to send to the email address: linhtd@soict.hust.edu.vn\\
+			Template for email title: [CL] - Your Full name - Your student number.\\
+			Example: [CL] - Nguyen Van A - 20202020.\\
+			The email needs to have:
+			\begin{enumerate}
+				\item Latex source (.tex file).
+				\item All images inside the document.
+				\item Output pdf file.
+			\end{enumerate}
+			Note: if the Latex file is not compiled, you will be penalized. If the email title is not correct, you will be also penalized.
+	
+	\section{Equations}
+	\label{sec:eq}
+		The binomial series is the power series
+		\begin{equation}
+			(1+x)^{\alpha} = \sum_{n=0}^{\infty} \left( \begin{array}{c} \alpha \\ n \end{array} \right) x^{n} 
+		\label{eq:1}
+		\end{equation}
+		whose coefficients are the generalized binomial coefficients
+		\begin{equation}
+			\left( \begin{array}{c} \alpha \\ n \end{array} \right) = \prod_{k=1}^{n} \frac{\alpha - k + 1}{k} = \frac{\alpha(\alpha - 1)\cdots(\alpha - n +1)}{n!}
+		\label{eq:2}
+		\end{equation}
+		If $n = 0$, this product is an empty product and has value 1. It converges for $|x| < 1$ for any real or complex number $\alpha$
+		
+		When $\alpha = -1$, this is essential the infinite geometric series mentioned in the previous section. The special case $\alpha = 1/2$ and $\alpha = -1/2$ give the square root function and its inverse:
+		\begin{equation}
+			(1+x)^{\frac{1}{2}} = 1 + \frac{1}{2} x - \frac{1}{8} x^{2} + \frac{1}{16} x^{3} - \frac{5}{128} x^{4} + \frac{7}{256} x^{5}
+		\label{eq:3}
+		\end{equation}
+		\begin{equation}
+			(1+x)^{-\frac{1}{2}} = 1 - \frac{1}{2} x + \frac{1}{8} x^{2} - \frac{5}{16} x^{3} + \frac{35}{128} x^{4} - \frac{63}{256} x^{5}
+		\label{eq:4}
+		\end{equation}
+		
+		Funtion $f(x)$ is represent by Eq.(\ref{eq:5})
+		\begin{equation}
+			f(x,y) = 
+			\left \{
+			\begin{array}{ccl}
+				20205133^{x} & if & x<0 \\
+				\cos{5x} + i\sin{20205133} & if & 0 \leq x < 30\\
+				\sqrt[2]{20205133} & if & 30 \leq x < 100 \\
+				1 - \log_2 x^2 & if & 100 \leq x
+			\end{array}
+			\right .
+		\label{eq:5}
+		\end{equation}
+		
+		Calculate $f(x)$ with
+		\begin{displaymath}
+			x = \int_{0}^{20205133} \frac{5z^2 + 1}{z} \,dz
+		\end{displaymath}
+		
+	\section{Tables and tabulars}
+	\label{sec:tab}
+		Create two tables. Note: when creating the table, start from the basic table and then use the alignment methods. Check the ... for the alignment in left, right, or center.
+		
+		\textbf{Please fill the tables with your information. You need to fill one line into Table \ref{tab:1} and two lines in Table \ref{tab:2}}. Please use the package \textbf{multirow} and the command multirow number rows width text
+		\begin{table}[h]
+		\centering
+		\caption{ICT Student Information}
+			\begin{tabular}{|c|c|c|c|c|}
+				\hline
+				\multicolumn{5}{|c|}{ICT K64} \\
+				\hline
+				\# & Full Name & Student Number & DOB & Gender \\
+				\hline
+				1 & $\cdots$ & $\cdots$ & $\cdots$ & $\cdots$ \\
+				\hline
+				\multicolumn{5}{|c|}{ICT K65} \\
+				\hline
+				\# & Full Name & Student Number & DOB & Gender \\
+				\hline
+				1 & $\cdots$ & $\cdots$ & $\cdots$ & $\cdots$ \\
+				\hline
+			\end{tabular}
+		\label{tab:1}
+		\end{table}
+		\begin{table}[h]
+		\centering
+		\caption{Final Exam Schedule}
+			\begin{tabular}{|c|c|c|c|c|c|c|c|}
+				\hline
+				\multirow{2}{*}{Class ID} & \multirow{2}{*}{Course ID} & \multirow{2}{*}{Course Title} & \multirow{2}{*}{Week} & \multirow{2}{*}{Date} & \multirow{2}{*}{Room Time} & \multicolumn{2}{|c|}{Time} \\
+				\cline{7-8}
+				&  &  &  &  &  & Start Time & Stop Time \\
+				\hline
+				$\cdots$ & $\cdots$ & $\cdots$ & $\cdots$ & $\cdots$ & $\cdots$ & $\cdots$ & $\cdots$\\
+				\hline
+				$\cdots$ & $\cdots$ & $\cdots$ & $\cdots$ & $\cdots$ & $\cdots$ & $\cdots$ & $\cdots$\\
+				\hline
+			\end{tabular}
+		\label{tab:2}
+		\end{table}
+	\section{Figures}
+		Download the image from this address:\\
+		https://users.soict.hust.edu.vn/linhdt/rectangle.pdf
+		
+		Insert the image into the document so that the figure occupies 80\% of the width of the page. To do that, use width=0.8\textbackslash{textwidth} when insert the figure.
+		\begin{figure}[tbh]
+		\centering{\includegraphics[width=0.8\textwidth]{rectangle}}
+		\caption{Insert figure}
+		\end{figure}
+		
+		Use rectangle.pdf and rotate method. The angle of the rotation is last two number of your student number. For example, if your student number is 20192019, the angle will be 19 degrees.
+		\begin{figure}[tbh]
+		\centering
+		\begin{subfigure}[tbh]{0.3\textwidth}
+			\centering
+			\includegraphics[width=0.8\textwidth]{rectangle}
+			\caption{Normal figure}
+		\end{subfigure}
+		\hfill
+		\begin{subfigure}[tbh]{0.3\textwidth}
+			\centering
+			\includegraphics[angle=90, width=0.8\textwidth]{rectangle}
+			\caption{90 degree to the left}
+		\end{subfigure}
+		\hfill
+		\begin{subfigure}[tbh]{0.3\textwidth}
+			\centering
+			\includegraphics[angle=327, width=0.8\textwidth]{rectangle}
+			\caption{33 degree to the left}
+		\end{subfigure}
+	\caption{Rotated Rectangles}
+	\end{figure}
+		
+\section{Cross References}
+	See Table \ref{tab:1} in Section \ref{sec:eq} for an example of a table. Observe Eq.(\ref{eq:1}) and Eq.(\ref{eq:2}) in Section \ref{sec:tab} for examples of equations.
+
+\tableofcontents
+\listoffigures
+\listoftables
+
+\end{document}

@@ -1,0 +1,168 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{fancyhdr}
+\title{Computer Literacy ICT program 20201}
+\author{Nguyen Khanh Trung 20205133}
+\date{\today}
+
+\begin{document}
+	\maketitle
+	
+	\section{How to calculate the score of the test}
+		\begin{itemize}
+			\item Compiled to pdf file (0.5 points)
+			\item Title (0.75 points): each line 0.25 points. It is necessary to have your
+correct full name and your correct student number.
+			\item Format the text correctly (0.25 points)
+			\item Sectioning (1.5 points)
+			\item Math (2 points): each equation 0.5 points
+			\item Table ( 1.5 point): first table 0.5 points, second table 1 point.
+			\item Figure (1 point): first figure 0.5 points, second figure 0.5 points.
+			\item Create itemize and enumerate (1 point)
+			\item Cross Ref (0.5 points)
+			\item Create table of content 0.5 points
+			\item Create list of tables 0.25 points
+			\item Create list of figures 0.25 points
+		\end{itemize}
+		
+	\section{Instructions}
+		\subsection{How to do}
+			Students need to create this document using latex and follow \textbf{these below rules:}
+			\begin{enumerate}
+				\item Need to use ``article'' for document class.
+				\item Write your full name and date using commands \textbf{\textbackslash{author}} and \textbf{\textbackslash{date}}.
+				\item Use sectioning commands to split the sections inside the document.
+				\item Use cross-referencing commands \textbf{\textbackslash{ref}}.
+				\item Use commands to create table of contents, list of figures, list of tables.
+				\item Put the image file and Latex source file (.tex) in the same folder.
+				\item Change text \textit{``your\_student\_number''} to correct student number. Example: 20192019
+			\end{enumerate}
+		
+		\subsection{Submission}
+			Time: 90 minutes.\\
+			When submission, student need to send to the email address: linhtd@soict.hust.edu.vn\\
+			Template for email title: [CL] - Your Full name - Your student number.\\
+			Example: [CL] - Nguyen Van A - 20202020.\\
+			The email needs to have:
+			\begin{enumerate}
+				\item Latex source (.tex file).
+				\item All images inside the document.
+				\item Output pdf file.
+			\end{enumerate}
+			Note: if the Latex file is not compiled, you will be penalized. If the email title is not correct, you will be also penalized.
+	\section{Equations}
+		A $k$-combination of a set $S$ is a subset of $k$ distinct elements of $S$. If the set has $n$ elements, the number of $k$-combinations is equal to the binomial coefficient in Equation (\ref{eq:1}):
+		\begin{eqnarray}
+			\left(
+			\begin{array}{c} 
+				n\\k
+			\end{array}
+			\right)
+			& = & \frac{n(n-1)\cdots(n-k+1)}{k(k-1)\cdots1} \nonumber \\
+			& = & \frac{n!}{k!(n-k)!}
+		\label{eq:1}
+		\end{eqnarray}
+		Function $f(x, y)$ is represent by Eq.(\ref{eq:2}). Function $y_2$ is represented by Eq.(\ref{eq:3})
+		\begin{equation}
+			f(x,y) =
+			\left \{
+			\begin{array}{ccl}
+				{a_1}^x+{a_2}^y                 & if & x<0             \\
+				\cos{n\varphi} +i\sin{n\varphi} & if & 0 \leq x < 10   \\
+				\sqrt[3]{20205133}              & if & 20 \leq x < 30  \\
+				1 - \log_2 x^y                  & if & 50 \leq x
+			\end{array}
+			\right .
+		\label{eq:2}
+		\end{equation}
+		
+		\begin{equation}
+			y_2 = \int_{-\infty}^{\infty} \int_{0}^{1} \frac{y}{4x+1} \,dx \,dy
+		\label{eq:3}
+		\end{equation}
+		
+		Calculate
+		\begin{displaymath}
+			\lim_{x \to 20205133} \prod_{i=1}^{n} f(x,i)
+		\end{displaymath}
+	\section{Tables and tabulars}
+		Create two tables. Note: when creating the table, start from the basic table
+and then use the alignment methods. Check the $\cdots$ for the alignment in left,
+right, or center.
+
+		\textbf{Please fill the tables with your information. You need to fill one line into Table \ref{tab:1}. One line in ``General courses'' section and one line
+in ``IT courses'' section of Table \ref{tab:2}.}
+		\begin{table}[h]
+		\centering
+		\caption{Identity information}
+			\begin{tabular}{|l|c|r|}
+				\hline
+				\multicolumn{3}{|c|}{\textbf{Information of student in ICT-65}}\\
+				\hline
+				\hline
+				\multicolumn{1}{|c}{\textbf{Full Name}} & \multicolumn{1}{|c}{\textbf{Student number}} & \multicolumn{1}{|c|}{\textbf{Gender}}\\
+				\hline
+				Nguyen Khanh Trung & 20205133 & Male\\
+				\hline
+			\end{tabular}
+		\label{tab:1}
+		\end{table}
+		
+		\begin{table}[h]
+		\centering
+		\caption{Class timetable}
+			\begin{tabular}{|l|l|r|r|}
+				\hline
+				\multicolumn{1}{|c}{\textbf{\#}} & \multicolumn{1}{|c}{\textbf{Course name}}& \multicolumn{1}{|c}{\textbf{Start time}} & \multicolumn{1}{|c|}{\textbf{room}}\\
+				\hline
+				\multicolumn{4}{|c|}{\textbf{General courses}}\\
+				\hline
+				1 & Calculus & 8h25 & D9-502\\
+				\hline
+				\multicolumn{4}{|c|}{\textbf{IT courses}}\\
+				\hline
+				1 & C Programming & 12h30 & D9-503\\
+				\hline
+			\end{tabular}
+		\label{tab:2}
+		\end{table}
+		
+	\section{Figures}
+		Download the image from this address:\\
+		https://users.soict.hust.edu.vn/linhdt/rectangle.pdf
+		
+		Insert the image into the document so that the figure occupies 60\% of the
+width of the page. To do that, use width=0.6\textbackslash{textwidth} when insert the figure.
+
+		Use shapes.pdf and rotate method. The angle of the rotation is last two number of your student number. For example, if your student number is 20192019,
+the angle will be 19 degrees.
+
+	\begin{figure}[tbh]
+	\centering{\includegraphics[width=0.6\textwidth]{rectangle}}
+	\caption{Insert figure}
+	\end{figure}
+	
+	\begin{figure}[tbh]
+	\centering
+		\begin{subfigure}[tbh]{0.4\textwidth}
+			\centering
+			\includegraphics[angle=33]{rectangle}
+			\caption{33 degree to the right}
+		\end{subfigure}
+		\hfill
+		\begin{subfigure}[tbh]{0.4\textwidth}
+			\centering
+			\includegraphics[angle=327]{rectangle}
+			\caption{33 degree to the left}
+		\end{subfigure}
+	\caption{Rotation}
+	\end{figure}
+
+\section{Cross references}
+	See Table \ref{tab:1} for an example of a table. Observe Eq.(\ref{eq:2}) and Eq.(\ref{eq:3}) for examples of equations.
+\tableofcontents
+\listoffigures
+\listoftables
+\end{document}
